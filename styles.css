@@ -58,40 +58,61 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #2c3e50;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease;
 }
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+h1, h2 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.section-icon {
+    width: 50px; /* Smaller icon size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 40px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-section img.section-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-footer {
-    background-color: #34495e;
-    color: white;
     text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-    
+
+section h2 {
+    margin-top: 0;
+}
+
+#sub-info h3 {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#sub-info p {
+    margin: 10px 0;
+}
